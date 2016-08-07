@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteBase /wp-content/uploads/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*) http://theindependent.ca/wp-content/uploads/$1 [L,P]
+
+</IfModule>
