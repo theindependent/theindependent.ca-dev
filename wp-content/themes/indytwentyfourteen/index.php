@@ -17,7 +17,6 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<span>11111111111111111111111111111111111111111111</span>
 		<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
 
