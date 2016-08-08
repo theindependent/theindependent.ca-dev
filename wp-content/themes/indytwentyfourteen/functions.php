@@ -522,8 +522,9 @@ function enable_more_buttons($buttons) {
 add_filter("mce_buttons", "enable_more_buttons");
 
 function facebook_page_like_count( $url ) {
- 
-    $api = file_get_contents( 'http://graph.facebook.com/?id=' . $url );
+ 	$prod_url = str_replace(WP_SITEURL, WP_PRODURL, $url);
+ 	
+    $api = file_get_contents( 'http://graph.facebook.com/?id=' . $prod_url );
  
     $count = json_decode( $api );
  
