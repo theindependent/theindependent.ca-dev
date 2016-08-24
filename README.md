@@ -12,6 +12,10 @@ The current purpose of this repo is to allow people who will be helping with the
 6. Copy the `/wp-config.example.php` file to `/wp-config.php`. Edit the DB_NAME, DB_USER and DB_PASSWORD variables to reflect the value you just created.
 7. Now, if go to localhost at the port at where your *AMP is serving, you should see theindependent.ca
 
+Eventually, the local environment will be run from docker.
+
+In the future, we will not include plug-ins in the repo.
+
 ## Developing
 
 To play with the code and improve the site, there are two sets of files you should work with. The core of the site is in the `/Users/danmiller/wordpress/wp-content/themes/indytwentyfourteen/` folder. Pages - notably "News", "Opinion", "Letters", and other pages access through the tabs across the top of the site - must be accessed via the admin interface.
@@ -24,6 +28,8 @@ Currently accepting PRs focused on:
 (A) Making the local set up easier
 (B) Making this development version of the site more accurately mimic the production version
 
-Eventually, the local environment will be run from docker.
+## Contact
 
-In the future, we will not include plug-ins in the repo.
+Join us here: https://indy-dev.slack.com/
+
+
