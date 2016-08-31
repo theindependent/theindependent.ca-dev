@@ -1,9 +1,6 @@
+RewriteEngine on
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-
-  RewriteBase /images/
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*) http://theindependent.ca/images/$1 [L,P]
-
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule   ^(.+) http://theindependent.ca/images/$1 [L]
 </IfModule>
