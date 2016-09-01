@@ -18,18 +18,21 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', /*DATABASE_NAME_HERE*/);
+/** 
+  * Name of a database selected in (M/W/L)AMP or 
+  * the WORDPRESS_DB_NAME and MYSQL_DATABASE in docker-compose.yml
+  */
+define('DB_NAME', 'indymockdatabaseaug2016'); 
 
 /** MySQL database username */
-define('DB_USER', /*DATABASE_USERNAME_HERE*/);
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', /*DATABASE_PASSWORD_HERE*/);
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+/** `db` if using docker-compose.yml, `localhost` if using (M/W/L)AMP */
+define('DB_HOST', 'db');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
