@@ -2,7 +2,6 @@
 /wp-content/themes/twenty*
 /wp-content/upgrade
 /sitemap.*
-/wp-config.php
 *.sql
 
 # Hidden files
